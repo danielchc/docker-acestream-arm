@@ -14,11 +14,11 @@ ADD acestream.conf  /acestream.engine/
 ## How to run
 To run with default config
 ```
-docker run -d -p 8001:8000 -p8621:8621 -p6878:6878  acestream-armv7
+docker run -it --rm --privileged -p 8001:8000 -p8621:8621 -p6878:6878  acestream-armv7
 ```
 If you want a custom configuration
 ```
-docker run -d -p 8001:8000 -v $(pwd)/acestream.conf:/acestream.engine/acestream.conf -p8621:8621 -p6878:6878  acestream-armv7
+docker run -it --rm --privileged -p 8001:8000 -v $(pwd)/acestream.conf:/acestream.engine/acestream.conf -p8621:8621 -p6878:6878  acestream-armv7
 ```
 
 ## How to play

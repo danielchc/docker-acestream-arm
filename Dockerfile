@@ -4,10 +4,6 @@ RUN apt update -y && apt upgrade -y
 
 ADD engine_3.1.61_armv7.tar.gz /tmp
 
-
-RUN cd /tmp && \
-tar xvf engine_3.1.61_armv7.tar.gz -C ./
-
 RUN cd /tmp/acestream.engine && \
     mv androidfs/system / && \
     mv androidfs/acestream.engine / && \
