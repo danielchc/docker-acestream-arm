@@ -1,9 +1,9 @@
-# acestream-armv7
+# docker-acestream-arm
 Docker image to run acestream-engine in RaspberryPI or armv7 system.
 
 ## How to build
 ```
-docker build -t acestream-armv7 .
+docker build -t acestream-arm .
 ```
 If you want build image with custom configuration, uncomment the line 
 ```
@@ -14,11 +14,11 @@ ADD acestream.conf  /acestream.engine/
 ## How to run
 To run with default config
 ```
-docker run -it --rm --privileged -p8621:8621 -p6878:6878  acestream-armv7
+docker run -it --rm --privileged -p8621:8621 -p6878:6878  acestream-arm
 ```
 If you want a custom configuration
 ```
-docker run -it --rm --privileged -v $(pwd)/acestream.conf:/acestream.engine/acestream.conf -p8621:8621 -p6878:6878  acestream-armv7
+docker run -it --rm --privileged -v $(pwd)/acestream.conf:/acestream.engine/acestream.conf -p8621:8621 -p6878:6878  acestream-arm
 ```
 
 ## How to play
