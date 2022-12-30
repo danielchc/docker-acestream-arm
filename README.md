@@ -1,6 +1,6 @@
 # docker-acestream-arm
 
-[Check in Dockerhub](https://hub.docker.com/r/danielchc/acestream-arm)
+[Dockerhub](https://hub.docker.com/r/danielchc/acestream-arm)
 
 Docker image to run acestream-engine in RaspberryPI or armv7 system.
 
